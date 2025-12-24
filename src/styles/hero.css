@@ -1,0 +1,58 @@
+.hero {}
+
+.hero__container {
+    color: var(--white);
+    text-align: left
+}
+
+
+.hero__container>h1 {
+    font-family: "Unbounded", sans-serif !important;
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 110%;
+    margin: 20px 0 14px 0;
+}
+
+.hero__container>p {
+    font-size: 24px;
+    font-weight: 400;
+
+}
+
+
+@media (max-width: 1024px) {
+    .hero__container>h1 {
+        font-size: 60px;
+    }
+
+    .hero__container>p {
+        font-size: 22px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .hero__container>h1 {
+        font-size: 48px;
+        line-height: 115%;
+    }
+
+    .hero__container>p {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .hero__container>h1 {
+        font-size: 27px;
+        line-height: 115%;
+        margin: 15px 0 14px 0;
+    }
+
+    .hero__container>p {
+        font-size: 14px;
+    }
+}

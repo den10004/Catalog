@@ -5,82 +5,40 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles/styles.css" />
-    <title>Коммерческое предложение</title>
+    <title>Каталог</title>
   </head>
 
   <body>
     <header class="wrapper">
       <div class="header__container">
-        <div class="logo">VAC</div>
-
-        <ul class="nav-menu">
-          <li><a href="#description" class="nav-link">Описание</a></li>
-          <li><a href="#gallery" class="nav-link">Галерея</a></li>
-          <li>
-            <a href="#efficiency" class="nav-link">Производительность</a>
-          </li>
-          <li><a href="#feedback" class="nav-link">Отзывы</a></li>
-        </ul>
-
-        <div class="header-burger">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+        <div class="logo">Logo</div>
+        <button class="btn-main">Разместить франшизу</button>
       </div>
     </header>
 
-    <footer class="sectionMargin">
-      <div class="wrapper footer">
-        <div class="logo" style="color: var(--white)">VAC</div>
-
-        <div class="footer__list">
-          <div class="footer__block">
-            <ul class="footer__menu">
-              <li><a href="#description">Описание</a></li>
-              <li><a href="#gallery">Галерея</a></li>
-              <li>
-                <a href="#efficiency">Производительность</a>
-              </li>
-              <li><a href="#feedback">Отзывы</a></li>
-            </ul>
-          </div>
-          <div class="footer__block2">
-            <ul class="footer__conf">
-              <li>VAC 2025</li>
-              <li>Политика конфиденциальности</li>
-            </ul>
-          </div>
+    <section class="hero">
+      <div class="wrapper">
+        <div class="hero__container">
+          <h1>Народный рейтинг франшиз 2026</h1>
+          <p>
+            Рейтинг, сформированный реальным опытом, рейтинг, сформированный
+            реальным опытом
+          </p>
         </div>
       </div>
-    </footer>
+    </section>
+
+    <!--
+    <footer>
+      <div class="wrapper">
+        <div class="footer">
+          <div class="logo" style="color: var(--white)">Logo</div>
+          <a href="#">Политика конфиденциальности</a>
+          <button class="btn-main">Разместить франшизу</button>
+        </div>
+      </div>
+    </footer>-->
   </body>
 
   <script src="./src/js/swiper-bundle.min.js"></script>
-
-  <script>
-    /*шапка*/
-    document.addEventListener("DOMContentLoaded", () => {
-      const burger = document.querySelector(".header-burger");
-      const container = document.querySelector(".header__container");
-
-      const mobileMenu = document.createElement("div");
-      mobileMenu.classList.add("mobile-menu");
-
-      const navMenu = document.querySelector(".nav-menu");
-      const menuClone = navMenu.cloneNode(true);
-      menuClone.style.display = "block";
-      menuClone.style.flexDirection = "column";
-      menuClone.style.gap = "10px";
-      menuClone.style.padding = "5px";
-
-      mobileMenu.appendChild(menuClone);
-      container.appendChild(mobileMenu);
-
-      burger.addEventListener("click", () => {
-        burger.classList.toggle("active");
-        mobileMenu.classList.toggle("active");
-      });
-    });
-  </script>
 </html>
