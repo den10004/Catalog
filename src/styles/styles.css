@@ -29,7 +29,7 @@ body {
   font-family: "Onest", sans-serif;
   position: relative;
   height: 100%;
-  background: var(--bg);
+  background: black;
   background-image: url(./../../src/images/background.webp);
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -80,6 +80,7 @@ button {
 .logo {
   font-weight: 700;
   line-height: 58px;
+  color: white;
 }
 
 
@@ -101,8 +102,19 @@ button {
     background-position: 38% 0px;
   }
 
+  .btn-main {
+    padding: 15px 10px;
+  }
+
 }
 
+
+
+@media (max-width: 425px) {
+  .wrapper {
+    padding: 0px 20px;
+  }
+}
 
 
 @media (max-width: 370px) {

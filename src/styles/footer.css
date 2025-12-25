@@ -1,7 +1,8 @@
 footer {
-    border-radius: 56px 56px 0px 0px;
+    border-radius: 72px 72px 0px 0px;
     background: var(--bg);
-    padding: 40px 60px;
+    padding: 40px 50px;
+    margin-top: 30px;
 }
 
 
@@ -9,7 +10,8 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
+    flex-wrap: wrap;
 }
 
 .footer>a {
@@ -17,4 +19,47 @@ footer {
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        border-radius: 72px 72px 0px 0px;
+        padding: 20px 0px;
+    }
+
+    .footer>a {
+        font-size: 14px;
+
+    }
+}
+
+@media (max-width: 650px) {
+    footer {
+        border-radius: 32px 32px 0px 0px;
+    }
+
+    .footer {
+        justify-content: center;
+        row-gap: 20px;
+    }
+
+    .footer .logo {
+        flex: 1;
+    }
+
+    .footer a {
+        flex-basis: 100%;
+        text-align: center;
+        order: 3;
+    }
+
+    footer {
+        padding: 20px 10px;
+        padding: 7px 0px;
+    }
+
+    footer .btn-main {
+        order: 2;
+        margin-top: 15px;
+    }
 }
