@@ -2,6 +2,7 @@
 @import "./hero.css";
 @import "./card.css";
 @import "./footer.css";
+@import "./slider.css";
 @import "./swiper-bundle.min.css";
 @import "./normalize.css";
 @import "../vendor/fonts.css";
@@ -13,6 +14,7 @@
   --gray: rgba(213, 213, 213, 1);
   --black: rgba(31, 31, 31, 1);
   --black-gr: rgba(145, 145, 145, 1);
+  --bg-gr: rgba(249, 249, 249, 1);
   --bg: rgba(51, 51, 51, 1);
   --white: rgba(255, 255, 255, 1);
 }
@@ -53,15 +55,15 @@ button {
   border: none;
   cursor: pointer;
   box-sizing: border-box;
+  color: var(--black);
+  background: var(--brand);
+  border-radius: 40px;
 }
 
 .btn-main {
   font-size: 16px;
   font-weight: 500;
   line-height: 120%;
-  color: var(--black);
-  background: var(--brand);
-  border-radius: 40px;
   padding: 15px 24px;
 
 }
@@ -79,7 +81,6 @@ button {
   font-weight: 700;
   line-height: 58px;
 }
-
 
 
 @media (max-width:1440px) {
