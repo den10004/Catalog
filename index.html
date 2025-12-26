@@ -12,7 +12,9 @@
     <header class="wrapper">
       <div class="header__container">
         <div class="logo">Logo</div>
-        <button class="btn-main">Разместить франшизу</button>
+        <button class="btn-main open-modal-btn" data-category="0">
+          Разместить франшизу
+        </button>
       </div>
     </header>
 
@@ -101,7 +103,13 @@
             </div>
           </div>
           <div class="card__btn">
-            <button class="btn-franshise">Получить перезентацию</button>
+            <button
+              class="btn-franshise btn-main open-modal-btn"
+              data-category="1"
+              data-shop="Smoking shop"
+            >
+              Получить перезентацию
+            </button>
           </div>
         </div>
       </div>
@@ -128,7 +136,7 @@
             <div class="card__logo">
               <img src="./src/images/2.webp" alt="logo" />
               <div class="card__item">
-                <p>Smoking shop</p>
+                <p>Smoking shop2</p>
                 <span>Табачный магазин</span>
               </div>
             </div>
@@ -180,7 +188,13 @@
             </div>
           </div>
           <div class="card__btn">
-            <button class="btn-franshise">Получить перезентацию</button>
+            <button
+              class="btn-franshise btn-main open-modal-btn"
+              data-category="1"
+              data-shop="Smoking shop2"
+            >
+              Получить перезентацию
+            </button>
           </div>
         </div>
       </div>
@@ -207,7 +221,7 @@
             <div class="card__logo">
               <img src="./src/images/2.webp" alt="logo" />
               <div class="card__item">
-                <p>Smoking shop</p>
+                <p>Smoking shop2</p>
                 <span>Табачный магазин</span>
               </div>
             </div>
@@ -259,7 +273,13 @@
             </div>
           </div>
           <div class="card__btn">
-            <button class="btn-franshise">Получить перезентацию</button>
+            <button
+              class="btn-franshise btn-main open-modal-btn"
+              data-category="1"
+              data-shop="Smoking shop2"
+            >
+              Получить перезентацию
+            </button>
           </div>
         </div>
       </div>
@@ -270,12 +290,50 @@
         <div class="footer">
           <div class="logo" style="color: var(--white)">Logo</div>
           <a href="#">Политика конфиденциальности</a>
-          <button class="btn-main">Разместить франшизу</button>
+          <button class="btn-main open-modal-btn" data-category="0">
+            Разместить франшизу
+          </button>
         </div>
       </div>
     </footer>
+
+    <!--Модальное окно-->
+    <div class="modal" id="myModal">
+      <div class="modal__content">
+        <h2 id="modalTitle">Заголовок модального окна</h2>
+        <button class="modal__close" id="closeModal">&times;</button>
+
+        <form class="modal__form" id="modalForm">
+          <input type="hidden" id="categoryField" name="category" value="" />
+          <input type="hidden" id="shopField" name="shop" value="" />
+
+          <input
+            type="text"
+            class="modal__input"
+            placeholder="Ваше имя"
+            required
+          />
+          <input
+            type="email"
+            class="modal__input"
+            placeholder="Ваш email"
+            required
+          />
+          <textarea
+            class="modal__input"
+            rows="4"
+            placeholder="Сообщение для размещения"
+            required
+          ></textarea>
+          <button type="submit" class="modal__button btn-main">
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
   </body>
 
   <script src="./src/js/swiper-bundle.min.js"></script>
+  <script src="./src/js/modal.js"></script>
   <script src="./src/js/swiper.js"></script>
 </html>
