@@ -8,7 +8,6 @@
 @import "./normalize.css";
 @import "../vendor/fonts.css";
 
-
 :root {
   --brand: rgba(0, 255, 129, 1);
   --hover: rgba(2, 254, 209, 1);
@@ -56,9 +55,6 @@ button {
   border: none;
   cursor: pointer;
   box-sizing: border-box;
-  color: var(--black);
-  background: var(--brand);
-  border-radius: 40px;
 }
 
 .btn-main {
@@ -66,12 +62,13 @@ button {
   font-weight: 500;
   line-height: 120%;
   padding: 15px 24px;
-
+  color: var(--black);
+  background: var(--brand);
+  border-radius: 40px;
 }
 
 .btn-main:hover {
   background: var(--hover);
-
 }
 
 .btn-main:disabled {
@@ -84,13 +81,23 @@ button {
   color: white;
 }
 
+input {
+  padding: 29px 32px;
+  border-radius: 24px;
+  background: var(--bg-gr);
+  color: var(--black-gr);
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+}
 
-@media (max-width:1440px) {
-
+@media (max-width: 1440px) {
   body {
     background-position: 38% 1px;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -107,16 +114,18 @@ button {
     padding: 15px 10px;
   }
 
+  input {
+    font-size: 16px;
+    padding: 15px 24px;
+    border-radius: 16px;
+  }
 }
-
-
 
 @media (max-width: 425px) {
   .wrapper {
     padding: 0px 20px;
   }
 }
-
 
 @media (max-width: 370px) {
   .wrapper {

@@ -301,34 +301,47 @@
     <div class="modal" id="myModal">
       <div class="modal__content">
         <h2 id="modalTitle">Заголовок модального окна</h2>
-        <button class="modal__close" id="closeModal">&times;</button>
+        <button class="modal__close" id="closeModal">
+          <svg
+            width="10"
+            height="10"
+            viewBox="0 0 10 10"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.24998 8.32107L8.32104 1.25"
+              stroke="#919191"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M1.24998 1.25006L8.32104 8.32113"
+              stroke="#919191"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
 
         <form class="modal__form" id="modalForm">
           <input type="hidden" id="categoryField" name="category" value="" />
           <input type="hidden" id="shopField" name="shop" value="" />
 
-          <input
-            type="text"
-            class="modal__input"
-            placeholder="Ваше имя"
-            required
-          />
-          <input
-            type="email"
-            class="modal__input"
-            placeholder="Ваш email"
-            required
-          />
-          <textarea
-            class="modal__input"
-            rows="4"
-            placeholder="Сообщение для размещения"
-            required
-          ></textarea>
+          <input type="text" placeholder="Введите название франшизы" required />
+          <input type="text" placeholder="Введите ваше имя" required />
+          <input type="tel" placeholder="Введите номер телефона" required />
           <button type="submit" class="modal__button btn-main">
-            Отправить
+            Отправить заявку
           </button>
         </form>
+        <span
+          >Нажимая на кнопку “Отправить заявку”, вы подтверждаете, что
+          ознакомлены и согласны с условиями политики обработки персональных
+          данных</span
+        >
       </div>
     </div>
   </body>
