@@ -38,7 +38,7 @@
   box-sizing: border-box;
 }
 
-.modal__content > span {
+.modal__content > div {
   color: var(--black-gr);
   font-size: 20px;
   font-weight: 400;
@@ -127,7 +127,7 @@ body.modal-open::before {
     margin-top: 13px;
     padding: 20px 24px;
   }
-  .modal__content > span {
+  .modal__content > div {
     font-size: 13px;
     line-height: 130%;
   }
