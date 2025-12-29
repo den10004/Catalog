@@ -57,18 +57,16 @@
   margin-top: auto;
 }
 
+.modal__content > div > a {
+  color: var(--black-gr);
+}
+
 .modal__content > p {
   font-family: "Onest";
   font-size: 24px;
   font-weight: 500;
   line-height: 29px;
   margin: 16px 0 32px 0;
-}
-
-.modal__content > a {
-  text-align: center;
-  padding: 30px 24px;
-  font-size: 24px;
 }
 
 body.modal-open::before {

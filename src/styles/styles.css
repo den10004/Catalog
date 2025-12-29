@@ -58,13 +58,16 @@ button {
 }
 
 .btn-main {
-  font-size: 16px;
   font-weight: 500;
   line-height: 120%;
-  padding: 15px 24px;
   color: var(--black);
   background: var(--brand);
   border-radius: 40px;
+}
+
+.btn-fr {
+  font-size: 16px;
+  padding: 15px 24px;
 }
 
 .btn-main:hover {
@@ -100,6 +103,13 @@ input {
   }
 }
 
+@media (max-width: 1024px) {
+  .btn-fr {
+    font-size: 16px;
+    padding: 15px 25px;
+  }
+}
+
 @media (max-width: 768px) {
   .wrapper {
     padding: 0px 40px;
@@ -108,10 +118,6 @@ input {
   body {
     background-image: url(./../../src/images/background-mid.webp);
     background-position: 38% 0px;
-  }
-
-  .btn-main {
-    padding: 15px 10px;
   }
 
   input {
