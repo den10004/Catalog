@@ -366,6 +366,17 @@
   .label > div {
     padding: 10px 0 0 26px;
   }
+  .label_box-r {
+    right: -18px;
+    width: 8px;
+    height: 17px;
+  }
+
+  .label_box-l {
+    left: -18px;
+    width: 8px;
+    height: 17px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -467,6 +478,11 @@
     width: 86px;
     height: 41px;
     font-size: 24px;
+  }
+  .label_box-r {
+    right: -18px;
+    width: 8px;
+    height: 17px;
   }
 }
 
