@@ -2,7 +2,7 @@
   margin-top: 50px !important;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .cards {
@@ -150,47 +150,21 @@
 
 .label {
   position: absolute;
-  top: -57px;
-  right: 68px;
-  width: 173px;
-  height: 59px;
-  background-color: var(--white);
-  border-radius: 30px 30px 0px 0px;
+  top: -53px;
+  right: 41px;
+}
+
+.label > img {
+  width: 100%;
+}
+
+.label > div {
+  position: absolute;
+  top: 8px;
+  right: 35%;
   font-family: "Unbounded";
   font-weight: 600;
   font-size: 48px;
-}
-
-.label_digit {
-  padding: 10px 0 0 52px;
-  box-sizing: border-box;
-}
-
-.label_box-r {
-  position: absolute;
-  bottom: -2px;
-  right: -28px;
-  width: 45px;
-  height: 32px;
-  background: radial-gradient(
-    149% 173% at right -79% top -60%,
-    transparent 99%,
-    var(--white)
-  );
-}
-
-.label_box-l {
-  position: absolute;
-  bottom: -3px;
-  left: -27px;
-  width: 45px;
-  height: 32px;
-  background: radial-gradient(
-    149% 173% at right -79% top -60%,
-    transparent 99%,
-    var(--white)
-  );
-  transform: scaleX(-1);
 }
 
 @media (max-width: 1360px) {
@@ -265,6 +239,7 @@
 @media (max-width: 1024px) {
   .card {
     margin-top: 32px !important;
+    gap: 20px;
   }
 
   .cards {
@@ -354,28 +329,20 @@
   .card__like > span {
     font-size: 14px;
   }
+}
+
+@media (max-width: 768px) {
   .label {
-    top: -40px;
-    right: 65px;
-    width: 100px;
-    height: 41px;
-    border-radius: 25px 25px 0px 0px;
-    font-size: 32px;
+    top: -38px;
+    right: 48px;
   }
 
+  .label > img {
+    width: 136px;
+    height: 40px;
+  }
   .label > div {
-    padding: 10px 0 0 26px;
-  }
-  .label_box-r {
-    right: -18px;
-    width: 8px;
-    height: 17px;
-  }
-
-  .label_box-l {
-    left: -18px;
-    width: 8px;
-    height: 17px;
+    font-size: 32px;
   }
 }
 
@@ -447,6 +414,12 @@
   }
 }
 
+@media (max-width: 664px) {
+  .label {
+    top: -32px;
+  }
+}
+
 @media (max-width: 425px) {
   .conditions-price > p {
     font-size: 12px;
@@ -473,16 +446,15 @@
     line-height: 19px;
   }
   .label {
-    top: -39px;
-    right: 54px;
-    width: 86px;
-    height: 41px;
-    font-size: 24px;
+    top: -37px;
+    right: 40px;
   }
-  .label_box-r {
-    right: -18px;
-    width: 8px;
-    height: 17px;
+
+  .label > img {
+    width: 115px;
+  }
+  .label > div {
+    font-size: 24px;
   }
 }
 
