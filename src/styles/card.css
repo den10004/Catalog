@@ -161,9 +161,36 @@
   font-size: 48px;
 }
 
-.label > div {
+.label_digit {
   padding: 10px 0 0 52px;
   box-sizing: border-box;
+}
+
+.label_box-r {
+  position: absolute;
+  bottom: -2px;
+  right: -28px;
+  width: 45px;
+  height: 32px;
+  background: radial-gradient(
+    149% 173% at right -79% top -60%,
+    transparent 99%,
+    var(--white)
+  );
+}
+
+.label_box-l {
+  position: absolute;
+  bottom: -3px;
+  left: -27px;
+  width: 45px;
+  height: 32px;
+  background: radial-gradient(
+    149% 173% at right -79% top -60%,
+    transparent 99%,
+    var(--white)
+  );
+  transform: scaleX(-1);
 }
 
 @media (max-width: 1360px) {
