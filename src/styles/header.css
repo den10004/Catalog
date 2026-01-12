@@ -1,6 +1,7 @@
 .header__container {
     padding: 40px 0px;
     width: 100%;
+    gap: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;

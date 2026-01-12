@@ -12,6 +12,7 @@ footer {
     justify-content: space-between;
     align-items: end;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .footer>a {
@@ -54,12 +55,10 @@ footer {
     }
 
     footer {
-        padding: 20px 10px;
-        padding: 7px 0px;
+        padding: 20px 0px;
     }
 
     footer .btn-main {
         order: 2;
-        margin-top: 15px;
     }
 }
